@@ -1,0 +1,67 @@
+{
+  "states": ["clear", "cloudy", "rainy", "snowy"],
+  "emissions": ["precipitation", "freezing", "sunshine", "rainbow", "stars"],
+  "initial_probabilities": {
+    "clear": 0.4,
+    "cloudy": 0.3,
+    "rainy": 0.1,
+    "snowy": 0.2
+  },
+  "transition_matrix": {
+    "clear": {
+      "clear": 0.7,
+      "cloudy": 0.2,
+      "rainy": 0.1,
+      "snowy": 0.1
+    },
+    "cloudy": {
+      "clear": 0.2,
+      "cloudy": 0.5,
+      "rainy": 0.2,
+      "snowy": 0.1
+    },
+    "rainy": {
+      "clear": 0.1,
+      "cloudy": 0.2,
+      "rainy": 0.5,
+      "snowy": 0.2
+    },
+    "snowy": {
+      "clear": 0.1,
+      "cloudy": 0.2,
+      "rainy": 0.2,
+      "snowy": 0.5
+    }
+  },
+  "emission_matrix": {
+    "clear": {
+      "precipitation": 0,
+      "freezing": 0.2,
+      "sunshine": 0.4,
+      "rainbow": 0.1,
+      "stars": 0.3
+    },
+    "cloudy": {
+      "precipitation": 0.2,
+      "freezing": 0.5,
+      "sunshine": 0.1,
+      "rainbow": 0.2,
+      "stars": 0
+    },
+    "rainy": {
+      "precipitation": 0.6,
+      "freezing": 0.2,
+      "sunshine": 0,
+      "rainbow": 0.2,
+      "stars": 0
+    },
+    "snowy": {
+      "precipitation": 0.4,
+      "freezing": 0.4,
+      "sunshine": 0.2,
+      "rainbow": 0,
+      "stars": 0
+    }
+  },
+  "min_threshold": 0.1
+}

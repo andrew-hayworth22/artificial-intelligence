@@ -1,0 +1,33 @@
+{
+  "states": ["happy", "sad"],
+  "emissions": ["sleep", "exercise", "cry", "laugh"],
+  "initial_probabilities": {
+    "happy": 0.6,
+    "sad": 0.4
+  },
+  "transition_matrix": {
+    "happy": {
+      "happy": 0.7,
+      "sad": 0.3
+    },
+    "sad": {
+      "happy": 0.2,
+      "sad": 0.8
+    }
+  },
+  "emission_matrix": {
+    "happy": {
+      "sleep": 0.2,
+      "exercise": 0.4,
+      "cry": 0.1,
+      "laugh": 0.3
+    },
+    "sad": {
+      "sleep": 0.3,
+      "exercise": 0.2,
+      "cry": 0.4,
+      "laugh": 0.1
+    }
+  },
+  "min_threshold": 0.11
+}

@@ -1,0 +1,8 @@
+{
+  "seed": 0,
+  "datapoints": 100,
+  "clusters": 3,
+  "cluster_std": 1,
+  "centroid_shift": 0.1,
+  "cycles": 100
+}
