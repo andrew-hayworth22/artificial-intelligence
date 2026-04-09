@@ -1,6 +1,6 @@
 {
   "dataset": {
-    "type": "circles",
+    "type": "moons",
     "seed": 0,
     "datapoints": 1000,
     "factor": 0.5,

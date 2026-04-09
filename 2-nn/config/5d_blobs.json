@@ -4,14 +4,14 @@
     "seed": 0,
     "datapoints": 1000,
     "clusters": 3,
-    "features": 3,
+    "features": 5,
     "factor": 0.5,
     "noise": 0.05,
     "test_size": 0.2
   },
   "nn": {
     "seed": 0,
-    "input_size": 3,
+    "input_size": 5,
     "hidden_layers": 2,
     "hidden_layer_size": 32,
     "output_size": 3,

@@ -1,8 +1,6 @@
 {
   "seed": 0,
   "datapoints": 100,
-  "clusters": 3,
-  "cluster_std": 1,
-  "centroid_shift": 0.1,
-  "cycles": 100
+  "noise": 10.0,
+  "test_size": 0.2
 }
